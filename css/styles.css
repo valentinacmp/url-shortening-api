@@ -1,0 +1,271 @@
+body {
+    overflow-x: hidden;
+    background: linear-gradient(1deg, hsl(260, 8%, 14%) 50%, white 50%);
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+span.navbar-brand.mb-0.h1 {
+    font-size: 2rem;
+    -webkit-text-stroke-width: thin;
+}
+
+.card-body.card-main {
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+}
+
+h1.main-text, h1.text-statistics, h5.card-title.stat, h1.get-started-text h1.final-info-tex {
+    font-weight: 700;
+}
+
+h1.main-text, h1.text-statistics, h5.card-title.stat, .card-title, .card-text, h1.get-started-text {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1.get-started-text {
+    color: white;
+    padding-bottom: 1%;
+}
+
+h1.main-text {
+    font-size: 4rem;
+}
+
+.card {
+	border: none !important;
+}
+
+.main-item.text {
+    padding: 4%;
+    padding-right: 0;
+}
+
+
+p.main-p, .nav-link {
+    color: hsl(257, 7%, 63%) !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p.main-p {
+    padding-right: 10%;
+}
+
+button.get-started.btn.btn-primary, button.btn-signup.btn.btn-primary, button.get-started-btn.btn.btn-primary {
+    border-radius: 20px;
+}
+
+.get-started.btn, .btn-signup.btn, .btn.shorten-btn, .get-started-btn, .btn.copy-btn  {
+    background-color: hsl(180, 66%, 49%) !important;
+    border-color: hsl(180, 66%, 49%) !important;
+}
+
+.btn.shorten-btn   {
+	width: 10rem;
+}
+
+button.get-started.btn.btn-primary, button.get-started-btn.btn.btn-primary {
+    width: 9rem;
+    font-weight: 500;
+}
+
+.btn.btn-signup, .btn.btn-login {
+    width: 7rem;
+}
+
+.card-body.card-main {
+    padding: 3rem 0rem 0rem 4rem !important;
+}
+
+img.illustration-working {
+    position: relative;
+    left: 4rem;
+}
+
+form.d-flex.nav-btn {
+    position: relative;
+    right: 8rem;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding-top: 2%;
+}
+
+.card-body.short-link, .card-body.get-started {
+    background-color: hsl(257, 27%, 26%);
+}
+
+.card-body.short-link{
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-color: hsl(257, 27%, 26%);
+}
+
+.card-body.get-started {
+    background-image: url(../images/bg-boost-desktop.svg);
+}
+
+.card-body.short-link {
+    height: 10rem;
+    width: 69rem;
+    margin: 0 auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding-left: 8% !important;
+}
+
+.card-body.advanced-statistics {
+    background-color: #f0f1f6;
+    padding: 10rem 0rem 10rem 0rem !important;
+}
+
+.card.short-link {
+    background: linear-gradient(0deg, #f0f1f6 50%, white 50%);
+}
+
+.cards-statistics {
+    display: flex;
+    justify-content: space-evenly;
+    /*padding-top: 6%;*/
+    margin: 12%;
+    margin-top: 8% !important;
+}
+
+form.d-flex.short-link {
+    width: 60rem;
+    height: 5rem;
+    margin: 0 auto;
+    padding-top: 3%;
+}
+
+.img-statistics {
+    background-color: hsl(257, 27%, 26%);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: relative;
+    bottom: 15%;
+    left: 10%;
+}
+
+img.icon-statistics {
+    margin: 25%;
+    width: 2rem;
+}
+
+svg.card-lines {
+    margin: -1%;
+}
+
+line.lines {
+    stroke: hsl(180, 66%, 49%);
+    stroke-width: 0.5em;
+}
+
+.card-title {
+    margin-bottom: 1rem !important;
+}
+
+.card.border-light.mb-3.card-statistics-2 {
+    top: 2.3rem;
+}
+
+.card.border-light.mb-3.card-statistics-3 {
+    top: 5.3rem;
+}
+
+p.card-text.card-text-stat {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+p.card-text.statistics-p.text-center, p.card-text.card-text-stat, .list {
+	color: hsl(257, 7%, 63%);
+}
+
+p.card-text.statistics-p.text-center {
+    width: 30rem;
+    margin: 0 auto;
+}
+
+.card.get-started {
+    bottom: 9rem;
+    height: 15.5rem;
+}
+
+.card.final-info {
+    background-color: hsl(260, 8%, 14%);
+    border-radius: 0px 0px 0px 0px !important;
+    /*height: 20pc;*/
+    color: white;
+    bottom: 4rem;
+}
+
+.card-body.get-started.text-center {
+    padding: 5%;
+}
+
+img.icon-info {
+    margin: 3%;
+}
+
+.list {
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+span.list-info-text {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 4%;
+}
+
+h1.final-info-text {
+    text-align: center;
+}
+
+.card.shorted-card {
+    z-index: 1;
+    margin-bottom: 1% !important;
+    margin-top: 2% !important;
+    margin: 0 auto;
+    width: 82% !important;
+}
+
+.card.card-main {
+    padding-bottom: 5%;
+}
+
+.shorted-links {
+    background-color: #f0f1f6;
+}
+
+.d-flex.bd-highlight.shortedlink {
+    align-items: baseline;
+}
+
+button.btn.copy-btn.btn-primary {
+    width: 6rem;
+}
+
+button.btn.copy-btn.btn-primary:hover, 
+button.get-started.btn.btn-primary:hover, 
+button.btn-signup.btn.btn-primary:hover, 
+button.get-started-btn.btn.btn-primary:hover {
+  background-color: #9ce2e2 !important;
+}
+
+button.btn.copy-btn.btn-primary:focus {     
+    background-color: hsl(260, 8%, 14%) !important;    
+}
+
+.card-text.shorted-link {
+    color: hsl(180, 66%, 49%) !important;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>URL Shortening API</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+	
+	<!-- NavBar -->
+
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <div class="container-fluid">
+	    <span class="navbar-brand mb-0 h1">Shortly</span>
+	    <div class="collapse navbar-collapse" id="navbarScroll">
+	      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#">Features</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#">Resources</a>
+	        </li>
+	      </ul>
+	      <form class="d-flex nav-btn">
+	        <button type="button" class="btn btn-login">Login</button>
+	        <button type="button" class="btn btn-signup btn-primary">Sign Up</button>
+	      </form>
+	    </div>
+	  </div>
+	</nav>
+
+	<!-- MAIN -->
+
+	<div class="card card-main">
+	  <div class="card-body card-main">
+	    <div class="main-item text">
+	    	<h1 class="main-text"> More than just shorter links </h1>
+		    <p class="main-p"> Build your brand's recognition and get detailed insights on how your links are performing.
+		    </p>
+	        <button type="button" class="get-started btn btn-primary">Get Started</button>
+	    </div>
+	    <div class="main-item image">
+	    	<img class="illustration-working" src = '../url-shortening-api/images/illustration-working.svg'/>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- shortly -->
+
+	<div class="card short-link">
+	  	<div class="card-body short-link">
+		    <form class="d-flex short-link needs-validation" novalidate>
+		      	<div class="input-group has-validation">
+			      	<input class="form-control me-2 short-link-input" id="input-text" onkeyup="getInputText()" type="text" placeholder="Shorten a link here..." required>
+				    <div class="invalid-feedback">
+				        Please add a link.
+				    </div>
+			    </div>
+		      <button class="btn shorten-btn btn-primary" onclick="getShortenLink()" type="submit">Shorten It!</button>
+		    </form>
+	  	</div>
+	</div>
+
+	<!-- Advanced statistics -->
+	<div class="card advanced-statistics">
+
+		<!-- Shorted links -->
+
+		<div class="shorted-links">		
+			<!-- <div class="card shorted-card">
+				<div class="card-body">
+					<div class="d-flex bd-highlight shortedlink">
+						<div class="p-2 flex-grow-1 bd-highlight">
+							<p class="card-text original-link">https://getbootstrap.com/docs/5.0/utilities/flex/</p>
+						</div>
+						<div class="p-2 bd-highlight">
+							<p class="card-text shorted-link">https://shrtco.de/yqIg8m</p>
+						</div>
+						<div class="p-2 bd-highlight">
+							<button class="btn copy-btn btn-primary" onclick="" type="button">Copy</button>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+
+		<div class="card-body advanced-statistics">
+
+	    	<h1 class="card-title text-statistics text-center">Advanced Statistics</h1>
+    		<p class="card-text statistics-p text-center">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+
+	    	<div class="cards-statistics">
+	    	
+	    		<div class="card border-light mb-3 card-statistics-1" style="max-width: 18rem;">
+		    		<div class="img-statistics">
+		    			<img class="icon-statistics" src = '../url-shortening-api/images/icon-brand-recognition.svg'/>	
+		    		</div>
+		    		<div class="card-body">
+					    <h5 class="card-title stat">Brand Recognition</h5>
+					    <p class="card-text card-text-stat">Boost your brand recognition with cach click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+					</div>
+				</div>
+				<svg width="50" height="290" class="card-lines"><line x1="0" y1="160" x2="50" y2="160" class="lines"></line></svg>
+				<div class="card border-light mb-3 card-statistics-2" style="max-width: 18rem;">
+					<div class="img-statistics">
+						<img class="icon-statistics" src = '../url-shortening-api/images/icon-detailed-records.svg'/>
+					</div>
+					 <div class="card-body">
+					    <h5 class="card-title stat">Detailed Records</h5>
+					    <p class="card-text card-text-stat">Gain insights who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+					</div>
+				</div>
+				<svg width="50" height="290" class="card-lines"><line x1="0" y1="160" x2="50" y2="160" class="lines"></line></svg>
+				<div class="card border-light mb-3 card-statistics-3" style="max-width: 18rem;">
+					<div class="img-statistics">
+	    				<img class="icon-statistics" src = '../url-shortening-api/images/icon-fully-customizable.svg'/>
+					</div>
+					<div class="card-body">
+					    <h5 class="card-title stat">Fully Customizable</h5>
+					    <p class="card-text card-text-stat">Improve brand awareness and content discoverability through customizable links, supercharging audience engagemenet.</p>
+					</div>
+				</div>
+	    	</div>
+	  	</div>
+
+	</div>
+
+	<!-- get started -->
+
+	<div class="card get-started">
+	  <div class="card-body get-started text-center">
+	  	<h1 class="get-started-text"> Bost your links today </h1>
+	    <button type="button" class="get-started-btn btn btn-primary">Get Started</button>
+	  </div>
+	</div>
+
+	<!-- final section -->
+
+	<div class="card final-info">
+	  <div class="card-body">
+	  	<div class="d-flex bd-highlight">
+		  	<div class="p-2 flex-fill bd-highlight">
+	  			<h1 class="final-info-text"> Shortly </h1>	
+			</div>
+			<div class="p-2 flex-fill bd-highlight">
+				<div class="d-flex flex-row bd-highlight mb-3">
+				  	<div class="p-2 lists flex-fill bd-highlight features">
+	  					<span class="list-info-text"> Features</span>	
+						<div class="features-list list d-flex flex-column bd-highlight mb-3">
+							<div class="p-2 bd-highlight">Link Shortening</div>
+							<div class="p-2 bd-highlight">Branded Links</div>
+							<div class="p-2 bd-highlight">Analytics</div>
+						</div>
+					</div>
+				  	<div class="p-2 lists flex-fill bd-highlight resources">				  		
+	  					<span class="list-info-text">Resources</span>	
+				  		<div class="resources-list list d-flex flex-column bd-highlight mb-3">
+							<div class="p-2 bd-highlight">Blog</div>
+							<div class="p-2 bd-highlight">Developers</div>
+							<div class="p-2 bd-highlight">Support</div>
+						</div>
+				  	</div>
+				  	<div class="p-2 lists flex-fill bd-highlight company">			  		
+	  					<span class="list-info-text">Company</span>	
+				  		<div class="company-list list d-flex flex-column bd-highlight mb-3">
+							<div class="p-2 bd-highlight">About</div>
+							<div class="p-2 bd-highlight">Our Team</div>
+							<div class="p-2 bd-highlight">Careers</div>
+							<div class="p-2 bd-highlight">Contact</div>
+						</div>
+				  	</div>
+				</div>
+			</div>
+			<div class="p-2 flex-fill bd-highlight">
+				<img class="icon-info" src = '../url-shortening-api/images/icon-facebook.svg'/>
+				<img class="icon-info" src = '../url-shortening-api/images/icon-twitter.svg'/>
+				<img class="icon-info" src = '../url-shortening-api/images/icon-pinterest.svg'/>
+				<img class="icon-info" src = '../url-shortening-api/images/icon-instagram.svg'/>		
+			</div>
+		</div>
+	  </div>
+	</div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
